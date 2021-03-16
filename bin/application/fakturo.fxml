@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="272.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.fakturoController">
+   <children>
+      <TableView fx:id="orderedTable" layoutX="48.0" layoutY="76.0" prefHeight="241.0" prefWidth="162.0">
+        <columns>
+          <TableColumn fx:id="itemColumn" prefWidth="115.0" text="ITEM" />
+          <TableColumn fx:id="priceColumn" prefWidth="45.0" text="PRICE" />
+        </columns>
+      </TableView>
+      <Label layoutX="129.0" layoutY="326.0" text="TOTAL:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fx:id="totalText" layoutX="170.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="47.8203125">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="printbutton" layoutX="14.0" layoutY="354.0" mnemonicParsing="false" style="-fx-background-color: #63D1DF;" text="PRINT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="clearbutton" layoutX="200.0" layoutY="354.0" mnemonicParsing="false" onAction="#clearprintonClick" style="-fx-background-color: #63D1DF;" text="CLEAR">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Text fx:id="texttable" layoutX="125.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</Pane>

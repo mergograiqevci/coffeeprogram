@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.zgjedhTavolinen">
+   <children>
+      <ImageView fitHeight="617.0" fitWidth="929.0" layoutX="-4.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@..\images\choosetable.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="355.0" layoutY="37.0" text="CHOOSE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="table6" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="128.0" layoutX="703.0" layoutY="331.0" onMouseClicked="#ontableClicked" stroke="BLACK" strokeType="INSIDE" width="128.0" />
+      <Rectangle fx:id="table5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="128.0" layoutX="523.0" layoutY="331.0" onMouseClicked="#ontableClicked" stroke="BLACK" strokeType="INSIDE" width="128.0" />
+      <Rectangle fx:id="table4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="128.0" layoutX="343.0" layoutY="331.0" onMouseClicked="#ontableClicked" stroke="BLACK" strokeType="INSIDE" width="128.0" />
+      <Rectangle fx:id="table3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="128.0" layoutX="703.0" layoutY="163.0" onMouseClicked="#ontableClicked" stroke="BLACK" strokeType="INSIDE" width="128.0" />
+      <Rectangle fx:id="table2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="128.0" layoutX="523.0" layoutY="163.0" onMouseClicked="#ontableClicked" stroke="BLACK" strokeType="INSIDE" width="128.0" />
+      <Rectangle fx:id="table1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="128.0" layoutX="343.0" layoutY="163.0" onMouseClicked="#ontableClicked" stroke="BLACK" strokeType="INSIDE" width="128.0" />
+      <Label layoutX="375.0" layoutY="214.0" text="TABLE 1" textFill="#47ff9d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="555.0" layoutY="381.0" text="TABLE 5" textFill="#47ff9d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="375.0" layoutY="381.0" text="TABLE 4" textFill="#47ff9d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="735.0" layoutY="214.0" text="TABLE 3" textFill="#47ff9d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="555.0" layoutY="214.0" text="TABLE 2" textFill="#47ff9d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="735.0" layoutY="382.0" text="TABLE 6" textFill="#47ff9d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="483.0" layoutY="37.0" text=" TABLE" textFill="#ffbb00">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="78.0" fitWidth="38.0" layoutX="860.0" layoutY="524.0" onMouseClicked="#onbackClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@..\images\previous.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="737.0" layoutY="524.0" mnemonicParsing="false" onMouseClicked="#onbackClicked" prefHeight="38.0" prefWidth="111.0" style="-fx-background-color: #2BB2F5;" text="SIGN OUT">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

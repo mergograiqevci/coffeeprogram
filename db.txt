@@ -1,0 +1,49 @@
+create table users(
+emri varchar(30),
+password varchar(30))
+;
+INSERT INTO users(emri,password)
+VALUES ('mergo','graiqevci');
+
+
+create table cocktail (
+emriProduktit varchar(100),
+sasiaProduktit varchar(10),
+cmimiProduktit double);
+insert into cocktail (emriProduktit,sasiaProduktit ,cmimiProduktit)
+VALUES ('Amaretto Cocktail','1',4.0);
+insert into cocktail (emriProduktit,sasiaProduktit ,cmimiProduktit)
+VALUES ('Mojito','1',4.7);
+insert into cocktail (emriProduktit,sasiaProduktit ,cmimiProduktit)
+VALUES ('Sweet Poison','1',3.2);
+
+
+create table kafe(
+emriProduktit varchar(100),
+sasiaProduktit varchar(10),
+cmimiProduktit double);
+insert into kafe(emriProduktit,sasiaProduktit ,cmimiProduktit)
+VALUES ('M.madhe','1',1.0);
+insert into kafe(emriProduktit,sasiaProduktit ,cmimiProduktit)
+VALUES ('Amerikane','1',1.0);
+insert into kafe(emriProduktit,sasiaProduktit ,cmimiProduktit)
+VALUES ('Espresso','1',0.8);
+
+create table table1(
+item varchar(100),
+price double);
+create table table2(
+item varchar(100),
+price double);
+create table table3(
+item varchar(100),
+price double);
+create table table4(
+item varchar(100),
+price double);
+create table table5(
+item varchar(100),
+price double);
+create table table6(
+item varchar(100),
+price double);

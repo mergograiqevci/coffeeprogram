@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="590.0" minWidth="920.0" prefHeight="590.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <ImageView fitHeight="622.0" fitWidth="991.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@..\images\loginphoto.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="269.0" layoutY="167.0" prefHeight="270.0" prefWidth="392.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 100px;">
+         <children>
+            <TextField fx:id="loginLabel" layoutX="106.0" layoutY="72.0" prefHeight="42.0" prefWidth="226.0" promptText="User" />
+            <ImageView fitHeight="41.0" fitWidth="48.0" layoutX="55.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@..\images\user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="48.0" layoutX="55.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@..\images\password.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="48.0" layoutX="175.0" layoutY="200.0" onMouseClicked="#onloginClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@..\images\log-in.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="166.0" layoutY="29.0" text="LOGIN" textAlignment="CENTER" textFill="#59e3ff">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordLabel" layoutX="106.0" layoutY="128.0" prefHeight="42.0" prefWidth="226.0" promptText="Password" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
